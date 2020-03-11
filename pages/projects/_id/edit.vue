@@ -15,7 +15,12 @@
         >
       </div>
       <div class="form-group">
-        <img :src="project.logo_url" alt="logo">
+        <template v-if="project.logo_url">
+          <img :src="project.logo_url" alt="logo">
+        </template>
+        <template v-else>
+          <img src="~/assets/images/logo.png" alt="logo">
+        </template>
       </div>
       <div class="form-group">
         <template v-if="project.is_active">

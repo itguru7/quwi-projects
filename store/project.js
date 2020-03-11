@@ -41,12 +41,15 @@ export const actions = {
           }
         }
       )
-      this.$router.push('/')
+      this.$toast.success('Project updated successfully')
+      setTimeout(() => {
+        this.$router.push('/')
+      }, 1000)
     } catch (error) {
-      if (error.response && error.response.status === 401) {
-        dispatch('auth/logout')
+      if (error.response) {
+        const { data } = error.response
+        this.$toast.error(data.first_errors)
       }
-      throw error
     }
   }
 }

@@ -5,7 +5,12 @@
         <tbody>
           <tr>
             <td class="project__image" rowspan="3">
-              <img :src="project.logo_url" alt="logo">
+              <template v-if="project.logo_url">
+                <img :src="project.logo_url" alt="logo">
+              </template>
+              <template v-else>
+                <img src="~/assets/images/logo.png" alt="logo">
+              </template>
             </td>
             <td class="project__name" rowspan="3">
               {{ project.name }}

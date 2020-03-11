@@ -46,7 +46,8 @@ module.exports = {
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    '@nuxtjs/moment'
+    '@nuxtjs/moment',
+    '@nuxtjs/toast'
   ],
   /*
   ** Axios module configuration

@@ -16,12 +16,15 @@ export const actions = {
       )
       const { token } = data
       commit('SAVE_TOKEN', token)
-      this.$router.push('/')
+      this.$toast.success('Login success')
+      setTimeout(() => {
+        this.$router.push('/')
+      }, 1000)
     } catch (error) {
-      if (error.response && error.response.status === 401) {
-        throw new Error('Bad credentials')
+      if (error.response) {
+        const { data } = error.response
+        this.$toast.error(data.first_errors.email)
       }
-      throw error
     }
   },
   logout ({ commit }) {
