@@ -1,0 +1,36 @@
+.project {
+  min-width: 800px;
+  max-width: 40%;
+  margin: 0.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #aaa;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 100px;
+  }
+  &__name {
+    width: 20%;
+    font-weight: bold;
+  }
+  &__status {
+    width: 30%;
+    .active {
+      color: green;
+    }
+    .inactive {
+      color: red;
+    }
+  }
+  &__range {
+    width: 20%;
+  }
+  &__duration {
+    width: 20%;
+    font-weight: bold;
+  }
+}

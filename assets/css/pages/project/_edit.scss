@@ -1,0 +1,18 @@
+.project-page {
+  min-height: 100vh;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+
+  .project-form {
+    margin: auto;
+    width: 500px;
+
+    .btn-update {
+      text-transform: uppercase;
+      color: #fff;
+      background: green;
+    }
+  }
+}

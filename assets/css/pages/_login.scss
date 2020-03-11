@@ -1,0 +1,29 @@
+.login-page {
+  min-height: 100vh;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+
+  .login-form {
+    margin: auto;
+    width: 500px;
+
+    .title {
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
+        'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      display: block;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #35495e;
+    }
+
+    .btn-login {
+      text-transform: uppercase;
+      color: #fff;
+      background: #32496d;
+    }
+  }
+}
